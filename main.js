@@ -43,7 +43,7 @@ function exibirDataFormatada() {
 }
 
 function adicionarOpcao() {
-    var diaSemana = document.getElementById("text").value;
+    var diaSemana = document.getElementById("texto").value;
     var selectSemana = document.getElementById("selecao");
 
     if (diaSemana) {
