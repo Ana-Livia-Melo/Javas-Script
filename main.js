@@ -77,7 +77,7 @@ function removerOption(){
 
 function mudarFormatacao{
     var elemento = document.getElementById("elemento");
-    elemento.style.backgroundColor = #f1f1f1;
+    elemento.style.backgroundColor = "#f1f1f1";
     elemento.style.color = "#000";
     elemento.style.fontWeight = "bold";
 
