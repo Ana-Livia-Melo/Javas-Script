@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <script src="main.js"></script>
+    
+</head>
+
+<body>
+    <section style="background-color: rgb(174, 91, 193); text-align: center;">
+        Java Script Aula
+    </section>
+
+    <div id="botoes" style="display: flex; justify-content: space-around;">
+        <input type="button" value="Botão 1" style="height: 70px;" onclick="btn1()">
+        <input type="button" value="Botão 2" onclick="btn2()">
+        <input type="button" value="Botão 3" onclick="btn3()">
+        <input type="button" value="Botão 4" onclick="btn4()">
+    </div>
+
+    <div id="Resultados" style="background-color: rgb(180, 99, 164); text-align: center;">
+       <h1>Resultados</h1>
+       <p id="saida"></p>
+    </div>
+    <hr>
+
+    <h1>Datas</h1>
+    <input type="text" id="Dia">
+    <input type="button" value="Pegar dia" onclick="getDia()">
+    <input type="button" value="Pegar data" onclick="exibirDataAtual()">
+
+    <input type="button" value="Pegar formatada" onclick="exibirDataFormatada()">
+    <p id="dataformatada"></p>
+
+
+
+    <hr>
+
+    <h1>Selection</h1>
+    Frutos:
+    <select id="selecaoItens" onchange="atualizarItensSelecionados">
+        <option value="Item1">Manga</option>
+        <option value="Item1">Pêra</option>
+        <option value="Item2">Pequi</option>
+    </select>
+    <p id="itemSelecionado"> Selecionar Item</p>
+
+
+    <hr>
+
+    <input type="text" id="texto">
+    <input type="button" value="Add" onclick="adicionarOpcao()">
+
+    <select id="selecao">
+        <option value="" disabled selected></option>
+        <option value="domingo">Domingo</option>
+        <option value="segunda">Segunda</option>;
+        <option value="terca" >Terça</option>
+        <option value="quarta" >Quarta</option>
+    </select>
+    <input type="button" value="">
+    
+    
+
+
+
+    
+
+
+
+</body>
+</html>
