@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> page </title>
+    <script src="main.js"></script>
+</head>
+<body>
+    <section style="background-color: gray; text-align: center; padding: 10px 20px;">
+        Javascript aula
+    
+    </section>
+    <div id="botoes" style="display: flex; justify-content: space-around; padding: 10px 20px ;">
+        <input type="button" value="botão 1" style="height: 70px;" onclick="btn1()">
+        <input type="button" value="botão 2" onclick="btn2()">
+        <input type="button" value="botão 3" onfocus="btn3()">
+        <input type="button" value="botão 4" onmouseover="btn4()">
+    </div>
+    <div id="resultado" style="background-color: gray; text-align: center;">
+        <h1> Resultado</h1>
+        <p id="saida"></p>
+    </div>
+    <hr>
+
+    <h1>datas</h1>
+    <input type="text" id="dia">
+    <input type="button" value="pegar dia" onclick="getDia()">
+    <input type="button" value="pegar data" onclick="exibirDataAtual()">
+
+    <input type="button" value="data Formatada" onclick="exibirDataFormatada()">
+    <p id="dataFormatada"></p>
+
+    <input type="data" name="" id="data1">
+    <input type="data" name="" id="data2">
+
+    <input type="button" onclick="calcularDifernca" value="calcular">
+    <p id="diferenca"></p>
+
+    <hr>
+    <h1>Selection</h1>
+    frutos:
+    <select id="selecaoItens" onchange="AtualizartemSelecionado()">
+        <option value="item1">Manga</option>
+        <option value="item2">Pera</option>
+        <option value="item3">Pequi</option>
+    </select>
+    <p id="ItemSelecionado"></p>
+
+
+
+</body>
+</html>
