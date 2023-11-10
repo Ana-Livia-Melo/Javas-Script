@@ -42,6 +42,14 @@ function exibirDataFormatada() {
     document.getElementById("dataformatada").innerHTML = data;
 }
 
+function atualizarItemSelecionado(){
+    var selectElement = document.getElementById("SelecaoItens")
+    var selectItem = selectElement.options(selectElement.selectedIndex).text;
+    document.getElementById("ItemSelecionado")
+}
+
+
+
 function adicionarOpcao() {
     var diaSemana = document.getElementById("texto").value;
     var selectSemana = document.getElementById("selecao");
@@ -57,3 +65,6 @@ function adicionarOpcao() {
 }
 
 
+function removerOption(){
+    var selectElement
+}
