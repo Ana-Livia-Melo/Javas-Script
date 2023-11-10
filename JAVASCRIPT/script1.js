@@ -9,6 +9,3 @@ let resto = 10 % 3;
 let nome = prompt ("Digite seu Nome");
 let idade = prompt ("Digite sua idade");
 
-
-COLOCAR 
-Document.WRITE("")
