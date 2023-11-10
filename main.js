@@ -1,0 +1,44 @@
+function btn1(){
+    document.getElementById("saida").innerHTML= "<p>Clique no botão 1</P>"
+}
+
+
+function btn2(){
+    document.getElementById("saida").innerHTML= "<p>Clique no botão 2</P>"
+}
+
+
+function btn3(){
+    document.getElementById("saida").innerHTML= "<p>Clique no botão 3</P>"
+}
+
+
+function btn4(){
+    document.getElementById("saida").innerHTML= "<p>Clique no botão 4</P>"
+}
+
+function getDia(){
+    var dataInput= document.getElementById("Dia");
+    var DataAtual= new Date();
+    var dia= DataAtual.getDate();
+
+    dataInput.value= dia;
+}
+
+function exibirDataAtual(){
+    var DataAtual = new Date;
+    document.getElementById("Dia").value= DataAtual.toLocaleDateString("pt-BR");
+}
+
+
+function exibirDataFormatada(){
+    var DataAtual = new Date();
+    var dia, mes, ano;
+    dia = DataAtual.getDate();
+    mes = DataAtual.getMonth();
+    ano = DataAtual.getFullYear();
+
+    var data = dia + "/" + (mes + 1) + "/" + ano;
+    document.getElementById("dataformatada").innerHTML = data;
+}
+
