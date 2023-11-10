@@ -66,5 +66,10 @@ function adicionarOpcao() {
 
 
 function removerOption(){
-    var selectElement
+    var selectElement = document.getElementById("selecao");
+    var selectItem = selectElement.options(selectElement.selectIndex);
+
+    if(selectElement){
+        selectElement.remove(selectItem.index);
+    }
 }
