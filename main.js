@@ -75,7 +75,7 @@ function removerOption(){
 }
 
 
-function mudarFormatacao{
+function mudarFormatacao(){
     var elemento = document.getElementById("elemento");
     elemento.style.backgroundColor = "#f1f1f1";
     elemento.style.color = "#000";
