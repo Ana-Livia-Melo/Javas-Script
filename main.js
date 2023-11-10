@@ -42,3 +42,17 @@ function exibirDataFormatada(){
     document.getElementById("dataformatada").innerHTML = data;
 }
 
+function adicionarOpcao(){
+    var diaSemana = document.getElementById("text").value;
+    var selectSemana = document.getElementById("selecao");
+
+    if (diaSemana);
+    var option = document.createElement("option");
+    option.value = diaSemana;
+    option.text = diaSemana;
+
+    selectSemana.add(option);
+    document.getElementById("text").value = "";
+}
+
+
