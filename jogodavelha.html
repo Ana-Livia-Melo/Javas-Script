@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f7f7f7;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .side-panel {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+
+        button {
+            padding: 5px 10px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        #game-board {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 5px;
+        }
+
+        .cell {
+            width: 50px;
+            height: 50px;
+            border: 1px solid #ccc;
+            text-align: center;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        #player1-wins, #player2-wins {
+            display: block;
+            margin-top: 5px;
+        }
+
+
+    </style>
+</head>
+    <title>Jogo da Velha</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="side-panel">
+        <label for="player1">Jogador 1:</label>
+        <input type="text" id="player1" placeholder="Nome do Jogador 1">
+        <span id="player1-wins">Vitórias: 0</span>
+        <button onclick="cadastrarJogador(1)">Cadastrar</button>
+    </div>
+
+    <div id="game-board">
+        <div class="cell" onclick="cellClick(this)"></div>
+        <div class="cell" onclick="cellClick(this)"></div>
+        <div class="cell" onclick="cellClick(this)"></div>
+        <div class="cell" onclick="cellClick(this)"></div>
+        <div class="cell" onclick="cellClick(this)"></div>
+        <div class="cell" onclick="cellClick(this)"></div>
+        <div class="cell" onclick="cellClick(this)"></div>
+        <div class="cell" onclick="cellClick(this)"></div>
+        <div class="cell" onclick="cellClick(this)"></div>
+    </div>
+
+    <div class="side-panel">
+        <label for="player2">Jogador 2:</label>
+        <input type="text" id="player2" placeholder="Nome do Jogador 2">
+        <span id="player2-wins">Vitórias: 0</span>
+        <button onclick="cadastrarJogador(2)">Cadastrar</button>
+    </div>
+</div>
+
+<script>
+let currentPlayer = 'X';
+
+function cellClick(cell) {
+    if (cell.innerText === '' && !checkWinner()) {
+        cell.innerText = currentPlayer;
+        currentPlayer = currentPlayer === 'X' ? 'O' : 'X'; // ? -> operador ternário
+    }
+}
+
+
+/* Fazer a verificação do vencedor.
+   Pode ocorrer vitória do jogador 1 ou 2, bem como empate.
+   Incrementar contador do vencedor
+ */
+function checkWinner() {
+    
+    return false;
+}
+</script>
+</body>
+</html>
